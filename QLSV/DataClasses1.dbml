@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSV" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=QLSV;Persist Security Info=True;User ID=sa;Trust Server Certificate=True" SettingsObjectName="QLSV.Properties.Settings" SettingsPropertyName="QLSVConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_sinhvien" Member="tbl_sinhviens">
+    <Type Name="tbl_sinhvien">
+      <Column Name="id" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="hoten" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="gioitinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="malop" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_lophoc" Member="tbl_lophocs">
+    <Type Name="tbl_lophoc">
+      <Column Name="malop" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="giangvien" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="monhoc" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="sosinhvien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
